@@ -31,6 +31,6 @@ public abstract class Conta {
 		return false;
 	}
 	
-//	public abstract void atualiza(double taxa);
+	public abstract void atualiza(double taxa);
 	
 }
