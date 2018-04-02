@@ -16,7 +16,8 @@ public class TestaConta {
 	        a.roda(cc);
 	        a.roda(cp);
 	        
-	        System.out.println("Saldo total:" + a.getSaldoTotal());
+	        System.out.printf("O saldo é: %.2f", cc.getSaldo());
+//	        System.out.println("Saldo total:" + a.getSaldoTotal());
 
 	}
 }
