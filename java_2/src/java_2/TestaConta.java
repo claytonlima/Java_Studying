@@ -7,7 +7,7 @@ public class TestaConta {
 	        Conta cp = new ContaPoupanca();
 
 //	        c.deposita(1000); 
-	        cc.deposita(1000); 
+	        cc.deposita(-1000); 
 	        cp.deposita(1000);
 
 	        AtualizadorDeContas a  = new AtualizadorDeContas(0.01);

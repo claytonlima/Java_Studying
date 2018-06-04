@@ -1,5 +1,7 @@
 package java_2;
 
+import org.omg.PortableServer.ThreadPolicyOperations;
+
 public abstract class Conta {
 	protected double saldo;
 	
@@ -12,15 +14,14 @@ public abstract class Conta {
 		return saldo;
 	}
 	
-	public void deposita(double valor) {
+	public void deposita(double valor) throws ValorInvalidoException {
 		if(valor > 1) {
 			this.saldo += valor;
 			System.out.println("Deposito de "+saldo+" feito com sucesso");
 		}else {
-			System.out.println("Deposito não efetuado, valor de "+saldo+" não é permitido, deposite acima 1" );
+			throw new ValorInvalidoException(valor);
 		}
 	}
-	
 	public boolean saca(Double saque) {
 		
 		if(this.saldo >= 1) {
